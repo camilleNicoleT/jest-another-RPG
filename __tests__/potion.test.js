@@ -1,9 +1,3 @@
-test('creates a health potion object', () => {
-    const potion = new Potion('health');
-  
-    expect(potion.name).toBe('health');
-    expect(potion.value).toEqual(expect.any(Number));
-  });
 
   function Potion(name) {
     this.types = ['strength', 'agility', 'health'];
@@ -17,6 +11,13 @@ test('creates a health potion object', () => {
     }
   }
   
+test('creates a health potion object', () => {
+  const potion = new Potion('health');
+
+  expect(potion.name).toBe('health');
+  expect(potion.value).toEqual(expect.any(Number));
+});
+
   test('creates a random potion object', () => {
     const potion = new Potion();
   
